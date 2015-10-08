@@ -1,0 +1,9 @@
+{% if memberList %}
+    <ul>
+    {% for member in memberList %}
+        <li><a href="/wics_database/{{ member.email }}/">{{ member.firstName }} {{ member.lastName }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No members are in database.</p>
+{% endif %}

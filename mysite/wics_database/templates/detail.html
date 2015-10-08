@@ -1,0 +1,6 @@
+<h1>{{ wicsMember.firstName }}</h1>
+<ul>
+{% for member in wicsMembers.get_all_members %}
+    <li>{{ member.firstName }}</li>
+{% endfor %}
+</ul>

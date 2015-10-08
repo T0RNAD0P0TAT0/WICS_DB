@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+ <body>
+   <h1>Test Button</h1>
+   <div>Relay 1:
+   	<form action = 'buttonClicked', method = 'POST'>{% csrf_token %}>
+     <input type="submit" value="Toggle" id="toggle1" />
+ </form>
+   </div>
+ </body>
+</head>
+</html> -->
+
+<!-- <h1>Fill out form </h1>
+<form action = "fillForm" method='POST'>
+{% csrf_token %}
+	<label for="enteredEmail">Enter email </label>
+	<input id='enteredEmail' type='text' name='enteredEmail' value="{{ email_value }}">
+	<input type = "submit" value = "submit here">
+</form> -->
+
+<form action ="fillForm/" method='POST'>{% csrf_token %}
+	<label for"email">Enter your email:</label>
+	<input id="email" type="text" name=email" values="{{current_email }}">"
+	<input type="submit" value="submit email">
+</form>
+
